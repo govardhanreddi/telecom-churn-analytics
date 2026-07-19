@@ -1,0 +1,8 @@
+{
+  "customers": 7043,
+  "churned_customers": 1869,
+  "churn_rate": 0.2653698707936959,
+  "total_revenue": 21371131.689999998,
+  "average_monthly_charge": 64.76169246059918,
+  "average_tenure_months": 32.38676700269772
+}

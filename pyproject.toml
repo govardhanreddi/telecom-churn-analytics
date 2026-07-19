@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telecom-churn-analytics"
+version = "1.0.0"
+description = "Reproducible customer churn analytics using Python, MySQL and Power BI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Govardhan Reddy"}]
+dependencies = [
+  "pandas>=2.2",
+  "matplotlib>=3.9",
+  "SQLAlchemy>=2.0",
+  "PyMySQL>=1.1",
+  "python-dotenv>=1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
